@@ -76,7 +76,7 @@ body {
 }
 
 form {
-    box-shadow: 5px 4px 5px black;
+    box-shadow: 5px 4px 10px black;
     display: flex;
     flex-direction: column;
 }
@@ -132,4 +132,18 @@ button {
 
 a {
     color: #596D48;
+}
+
+
+input:focus,
+input:focus-visible {
+  border-color: blue !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+#confirm-pass-field:invalid, #password-field:invalid {
+    border-color: red !important;
+  box-shadow: none !important;
+  outline: none !important;
 }
